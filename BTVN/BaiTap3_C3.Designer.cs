@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.pl_color = new System.Windows.Forms.Panel();
-            this.rdbtn_red = new System.Windows.Forms.RadioButton();
-            this.rdbtn_green = new System.Windows.Forms.RadioButton();
-            this.rdbtn_blue = new System.Windows.Forms.RadioButton();
             this.rdbtn_black = new System.Windows.Forms.RadioButton();
+            this.rdbtn_red = new System.Windows.Forms.RadioButton();
+            this.rdbtn_blue = new System.Windows.Forms.RadioButton();
+            this.rdbtn_green = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pl_font = new System.Windows.Forms.Panel();
-            this.cb_bold = new System.Windows.Forms.CheckBox();
-            this.cb_italic = new System.Windows.Forms.CheckBox();
             this.cb_underline = new System.Windows.Forms.CheckBox();
+            this.cb_italic = new System.Windows.Forms.CheckBox();
+            this.cb_bold = new System.Windows.Forms.CheckBox();
             this.btn_exit = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -61,6 +61,19 @@
             this.pl_color.Size = new System.Drawing.Size(148, 157);
             this.pl_color.TabIndex = 0;
             // 
+            // rdbtn_black
+            // 
+            this.rdbtn_black.AutoSize = true;
+            this.rdbtn_black.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rdbtn_black.Location = new System.Drawing.Point(16, 101);
+            this.rdbtn_black.Name = "rdbtn_black";
+            this.rdbtn_black.Size = new System.Drawing.Size(77, 24);
+            this.rdbtn_black.TabIndex = 4;
+            this.rdbtn_black.TabStop = true;
+            this.rdbtn_black.Text = "Black";
+            this.rdbtn_black.UseVisualStyleBackColor = true;
+            this.rdbtn_black.CheckedChanged += new System.EventHandler(this.rdbtn_black_CheckedChanged);
+            // 
             // rdbtn_red
             // 
             this.rdbtn_red.AutoSize = true;
@@ -73,19 +86,6 @@
             this.rdbtn_red.Text = "Red";
             this.rdbtn_red.UseVisualStyleBackColor = true;
             this.rdbtn_red.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // rdbtn_green
-            // 
-            this.rdbtn_green.AutoSize = true;
-            this.rdbtn_green.ForeColor = System.Drawing.Color.DarkGreen;
-            this.rdbtn_green.Location = new System.Drawing.Point(16, 49);
-            this.rdbtn_green.Name = "rdbtn_green";
-            this.rdbtn_green.Size = new System.Drawing.Size(81, 24);
-            this.rdbtn_green.TabIndex = 2;
-            this.rdbtn_green.TabStop = true;
-            this.rdbtn_green.Text = "Green";
-            this.rdbtn_green.UseVisualStyleBackColor = true;
-            this.rdbtn_green.CheckedChanged += new System.EventHandler(this.rdbtn_green_CheckedChanged);
             // 
             // rdbtn_blue
             // 
@@ -100,18 +100,18 @@
             this.rdbtn_blue.UseVisualStyleBackColor = true;
             this.rdbtn_blue.CheckedChanged += new System.EventHandler(this.rdbtn_blue_CheckedChanged);
             // 
-            // rdbtn_black
+            // rdbtn_green
             // 
-            this.rdbtn_black.AutoSize = true;
-            this.rdbtn_black.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.rdbtn_black.Location = new System.Drawing.Point(16, 101);
-            this.rdbtn_black.Name = "rdbtn_black";
-            this.rdbtn_black.Size = new System.Drawing.Size(77, 24);
-            this.rdbtn_black.TabIndex = 4;
-            this.rdbtn_black.TabStop = true;
-            this.rdbtn_black.Text = "Black";
-            this.rdbtn_black.UseVisualStyleBackColor = true;
-            this.rdbtn_black.CheckedChanged += new System.EventHandler(this.rdbtn_black_CheckedChanged);
+            this.rdbtn_green.AutoSize = true;
+            this.rdbtn_green.ForeColor = System.Drawing.Color.DarkGreen;
+            this.rdbtn_green.Location = new System.Drawing.Point(16, 49);
+            this.rdbtn_green.Name = "rdbtn_green";
+            this.rdbtn_green.Size = new System.Drawing.Size(81, 24);
+            this.rdbtn_green.TabIndex = 2;
+            this.rdbtn_green.TabStop = true;
+            this.rdbtn_green.Text = "Green";
+            this.rdbtn_green.UseVisualStyleBackColor = true;
+            this.rdbtn_green.CheckedChanged += new System.EventHandler(this.rdbtn_green_CheckedChanged);
             // 
             // label1
             // 
@@ -145,16 +145,16 @@
             this.pl_font.Size = new System.Drawing.Size(169, 157);
             this.pl_font.TabIndex = 2;
             // 
-            // cb_bold
+            // cb_underline
             // 
-            this.cb_bold.AutoSize = true;
-            this.cb_bold.Location = new System.Drawing.Point(16, 23);
-            this.cb_bold.Name = "cb_bold";
-            this.cb_bold.Size = new System.Drawing.Size(69, 24);
-            this.cb_bold.TabIndex = 4;
-            this.cb_bold.Text = "Đậm";
-            this.cb_bold.UseVisualStyleBackColor = true;
-            this.cb_bold.CheckedChanged += new System.EventHandler(this.cb_bold_CheckedChanged);
+            this.cb_underline.AutoSize = true;
+            this.cb_underline.Location = new System.Drawing.Point(16, 101);
+            this.cb_underline.Name = "cb_underline";
+            this.cb_underline.Size = new System.Drawing.Size(121, 24);
+            this.cb_underline.TabIndex = 6;
+            this.cb_underline.Text = "Gạch chân";
+            this.cb_underline.UseVisualStyleBackColor = true;
+            this.cb_underline.CheckedChanged += new System.EventHandler(this.cb_underline_CheckedChanged);
             // 
             // cb_italic
             // 
@@ -167,16 +167,16 @@
             this.cb_italic.UseVisualStyleBackColor = true;
             this.cb_italic.CheckedChanged += new System.EventHandler(this.cb_italic_CheckedChanged);
             // 
-            // cb_underline
+            // cb_bold
             // 
-            this.cb_underline.AutoSize = true;
-            this.cb_underline.Location = new System.Drawing.Point(16, 101);
-            this.cb_underline.Name = "cb_underline";
-            this.cb_underline.Size = new System.Drawing.Size(121, 24);
-            this.cb_underline.TabIndex = 6;
-            this.cb_underline.Text = "Gạch chân";
-            this.cb_underline.UseVisualStyleBackColor = true;
-            this.cb_underline.CheckedChanged += new System.EventHandler(this.cb_underline_CheckedChanged);
+            this.cb_bold.AutoSize = true;
+            this.cb_bold.Location = new System.Drawing.Point(16, 23);
+            this.cb_bold.Name = "cb_bold";
+            this.cb_bold.Size = new System.Drawing.Size(69, 24);
+            this.cb_bold.TabIndex = 4;
+            this.cb_bold.Text = "Đậm";
+            this.cb_bold.UseVisualStyleBackColor = true;
+            this.cb_bold.CheckedChanged += new System.EventHandler(this.cb_bold_CheckedChanged);
             // 
             // btn_exit
             // 
@@ -187,6 +187,7 @@
             this.btn_exit.TabIndex = 4;
             this.btn_exit.Text = "Thoát";
             this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // label3
             // 

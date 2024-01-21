@@ -99,5 +99,10 @@ namespace BTVN
             // Áp dụng font mới cho TextBox
             txt_hoVaTen.Font = new Font(txt_hoVaTen.Font.FontFamily, txt_hoVaTen.Font.Size, fontStyle);
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

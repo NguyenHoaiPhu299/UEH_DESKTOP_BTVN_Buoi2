@@ -16,7 +16,7 @@ namespace BTVN
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BaiTap5_C3());
+            Application.Run(new BaiTap7_C3());
         }
     }
 }

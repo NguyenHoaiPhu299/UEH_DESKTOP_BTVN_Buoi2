@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaiTap10_C3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap10_C3.Designer.cs">
+      <DependentUpon>BaiTap10_C3.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaiTap1_C3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,30 @@
     <Compile Include="BaiTap5_C3.Designer.cs">
       <DependentUpon>BaiTap5_C3.cs</DependentUpon>
     </Compile>
+    <Compile Include="BaiTap6_C3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap6_C3.Designer.cs">
+      <DependentUpon>BaiTap6_C3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaiTap7_C3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap7_C3.Designer.cs">
+      <DependentUpon>BaiTap7_C3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaiTap8_C3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap8_C3.Designer.cs">
+      <DependentUpon>BaiTap8_C3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaiTap9_C3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap9_C3.Designer.cs">
+      <DependentUpon>BaiTap9_C3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +128,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BaiTap5_C3.resx">
       <DependentUpon>BaiTap5_C3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiTap6_C3.resx">
+      <DependentUpon>BaiTap6_C3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiTap7_C3.resx">
+      <DependentUpon>BaiTap7_C3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
